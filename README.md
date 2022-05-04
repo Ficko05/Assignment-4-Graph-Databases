@@ -5,6 +5,12 @@ First you must create a database in neo4j, call it what ever you like.
 Then add the csv file from the data folder, into the database you created neo4j imports folder.
 
 
+### The model
+
+![image](https://user-images.githubusercontent.com/34158635/166833625-106f50f2-c64a-4733-89f9-aaf18285e6f0.png)
+
+
+
 ### In the neo4j database browser
 
 
