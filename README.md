@@ -87,3 +87,55 @@ LOAD CSV with headers FROM "file:///Sample_Game_1_RawEventsData.csv" AS row WITH
 LOAD CSV with headers FROM "file:///Sample_Game_1_RawEventsData.csv" AS row WITH row WHERE row["Type"] = "BALL LOST" match (e:Event {id:"BALL LOST"+ " Time: " + row["Start Time [s]"] +" " + row["End Time [s]"]}), (pTo:Player{id:row["From"]}) with e,pTo,row create (e)-[BALL LOST]->(pTo)
 ```
 
+##### who is the most active player (in terms of passing and receiving the ball)?
+With this query we see that player 21 for the away team, is the most active
+```
+// Most Active Player
+MATCH ((a)-[r:pass]->(b))
+WITH b, COUNT() as passCount
+ORDER BY passCount desc LIMIT 1
+RETURN passCount, b.id
+UNION
+MATCH ((b)-[r:pass]->(a))
+WITH b, COUNT() as passCount
+ORDER BY passCount desc LIMIT 1
+RETURN passCount, b.id
+
+```
+#### who has had a central role in the match?
+
+With this query we see that player 19 with 110 interactions.
+
+```
+// Most eventful Player
+MATCH ((a)-[r]->(b))
+WITH b, COUNT(*) as interactions
+ORDER BY interactions desc LIMIT 1
+RETURN interactions, b.id, b.team
+```
+
+#### which players have attempted to score?
+
+With this query we see these palyer are trying to score... there is alot XD
+
+```
+With this query we see that player 19 with 110 interactions.
+```
+
+#### which team has kept the ball longer?
+
+
+
+#### is there any close ‘societies’ between players (passing the ball to each other)?
+
+```
+```
+
+#### how close is the connection between two specific players?
+
+```
+```
+
+
+
+
