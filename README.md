@@ -8,8 +8,8 @@ Then add the csv file from the data folder, into the database you created neo4j 
 ### In the neo4j database browser
 
 
-This is the query to import the data and make the necessary nodes and relations, all queries have to be run separately.... 
-we are sorry for the inconvenience :/
+This is the querys to import the data and make the necessary nodes and relations, all queries have to be run separately.... 
+we are sorry for the inconvenience if you want to test it out :/
 
 ```
 WITH "file:///Sample_Game_1_RawEventsData.csv"
