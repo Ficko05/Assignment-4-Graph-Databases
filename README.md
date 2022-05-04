@@ -124,17 +124,10 @@ With this query we see that player 19 with 110 interactions.
 
 #### which team has kept the ball longer?
 
+![image](https://user-images.githubusercontent.com/34158635/166832569-a59cc813-516f-4957-ac9a-6867590ec41c.png)
 
 
-#### is there any close ‘societies’ between players (passing the ball to each other)?
 
-```
-```
-
-#### how close is the connection between two specific players?
-
-```
-```
 
 
 
