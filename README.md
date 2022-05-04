@@ -17,6 +17,10 @@ Then add the csv file from the data folder, into the database you created neo4j 
 This is the querys to import the data and make the necessary nodes and relations, all queries have to be run separately.... 
 we are sorry for the inconvenience if you want to test it out :/
 
+
+![image](https://user-images.githubusercontent.com/34158635/166833692-021adad2-eabd-4c55-9b95-00b5c12ae5b7.png)
+
+
 ```
 WITH "file:///Sample_Game_1_RawEventsData.csv"
 AS url
