@@ -137,6 +137,7 @@ With this query we see that player 19 with 110 interactions.
 ![image](https://user-images.githubusercontent.com/34158635/166832569-a59cc813-516f-4957-ac9a-6867590ec41c.png)
 
 
+With this code we can conclude that the Away team has the most ball possession.
 
 
 
